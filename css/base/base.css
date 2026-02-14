@@ -1,0 +1,42 @@
+:root {
+    --white: #F4F6F5;
+    --grey: #86928B;
+    --black: #2C2D35;
+    --on-green: #376B44;
+    --hover-green: #598D66;
+    --off-green: #D4E8D9;
+    --yellow: #EEDB6D;
+    --hover-yellow: #D9B949;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+a {
+    color: var(--black);
+}
+
+button {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+
+    max-width: 1110px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 39px;
+    }
+}

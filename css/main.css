@@ -1,0 +1,14 @@
+/* Fonts */
+@import './../fonts/Raleway-a.css';
+
+/* Base */
+@import './base/base.css';
+@import './base/reset.css';
+
+/* Blocks */
+@import './blocks/header.css';
+@import './blocks/hero.css';
+@import './blocks/catalog.css';
+@import './blocks/promo.css';
+@import './blocks/comand.css';
+@import './blocks/footer.css';

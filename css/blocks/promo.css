@@ -1,0 +1,100 @@
+.promo {
+    margin-top: 70px;
+
+    display: flex;
+	align-items: center;
+
+    height: 574px;
+
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, rgba(13, 43, 67, 0.80) 100%),
+    image-set(
+        url('./../../img/promo/Rectangle.jpg') 1x,
+        url('./../../img/promo/Rectangle@2x.jpg') 2x
+    );
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+}
+
+
+
+.promo-all {
+    max-width: 540px;
+    width: 100%;
+}
+
+.promo-title {
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+
+    font-size: 40px;
+    line-height: 100%;
+    color: var(--white);
+}
+
+.promo-title img {
+    max-width: 80px;
+    max-height: 80px;
+    width: 100%;
+}
+
+.promo-text {
+    color: white;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.promo-text p {
+    margin-bottom: 20px;
+}
+
+.promo-btn {
+    margin-top: 40px;
+    padding: 21px 60px;
+    max-width: 257px;
+    background-color: var(--yellow);
+    transition: 0.2s;
+}
+
+.promo-btn:hover {
+    background-color: var(--hover-yellow);
+}
+
+@media (max-width: 768px) {
+    .promo {
+        height: 502px;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, rgba(13, 43, 67, 0.70) 50%),
+            image-set(
+                url('./../../img/promo/Rectangle2media.jpg') 1x,
+                url('./../../img/promo/Rectangle2media@2x.jpg') 2x
+            );
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+
+    .promo-all {
+        max-width: 690px;
+    }
+
+    .promo-title {
+        font-size: 30px;
+    }
+
+    .promo-title h2 {
+        max-width: 370px;
+    }
+
+    .promo-title img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .promo-btn {
+        padding: 18.5px 36.5px;
+        max-width: 210px;
+    }
+}

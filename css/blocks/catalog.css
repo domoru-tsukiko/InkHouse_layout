@@ -1,0 +1,116 @@
+.catalog {
+    margin-top: 70px;
+}
+
+.catalog-title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.catalog-title h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.catalog-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.catalog-nav-btn {
+    padding: 10px 20px;
+    background-color: var(--off-green);
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.catalog-nav-btn:hover {
+    background-color: var(--hover-green);
+    color: var(--white);
+}
+
+.catalog-nav-btn-activ {
+    padding: 10px 20px;
+    background-color: var(--on-green);
+    border-radius: 20px;
+
+    color: var(--white);
+    font-size: 20px;
+}
+
+.catalog-grid {
+	display: none;
+}
+
+.catalog-grid-activ {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+
+}
+
+.catalog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 30px;
+    max-width: 350px;
+    background-color: var(--off-green);
+}
+
+.catalog-card img {
+    margin-bottom: 20px;
+}
+
+.author {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--grey);
+}
+
+.catalog-card h2 {
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+.catalog-card h3 {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.cost {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: var(--hover-green);
+}
+
+.catalog-btn button{
+    margin-top: auto;
+    padding: auto auto;
+    width: 100%;
+    height: 65px;
+    border: thin solid var(--hover-green);
+    color: var(--hover-green);
+    transition: 0.2s;
+}
+
+.catalog-btn button:hover {
+    background-color: var(--hover-green);
+    color: var(--white);
+}
+
+@media (max-width: 768px) {
+    .catalog-title h1 {
+        font-size: 30px;
+    }
+
+    .catalog-grid-activ {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

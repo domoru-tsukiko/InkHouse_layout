@@ -1,0 +1,56 @@
+.comand {
+    margin-top: 70px;
+}
+
+.comand-all {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.comand-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 124px;
+    gap: 20px;
+}
+
+.comand-about h2 {
+    font-size: 40px;
+    line-height: 110%;
+}
+
+.comand-about p {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.comand-icons {
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .comand-all {
+        display: block;
+    }
+
+    .comand-all img {
+        height: 510px;
+        width: 504px;
+    }
+
+    .comand-about {
+        margin-top: 40px;
+        gap: 30px;
+    }
+
+    .comand-about h2 {
+        font-size: 30px;
+    }
+
+    .comand-icons img {
+        height: 80px;
+        width: 80px;
+    }
+}
